@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Movie App</title>
+
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+</head>
+
+<body>
+
+ <nav class="position-fixed top-0 start-0 vh-100 text-center " style="margin-left: 0;">
+        <div class="nav-logo">
+            <img src="images/logo (1).png" class="img-fluid" alt="">
+        </div>
+        <div class="nav-menu">
+          <i class="fa-solid fa-align-justify"></i>
+        </div>
+        <div class="nav-icons">
+            <i class="fa-solid fa-globe"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+        </div>
+    </nav>
+
+    <div class="side-nav position-fixed top-0 start-0 vh-100" style="margin-left: -250px;">
+        <div class="menu">
+            <ul>
+                <li style="padding-top: 25px; opacity: 1;"><a attr="nowPlaying">Now playing</a></li>
+                <li style="padding-top: 25px; opacity: 1;"><a attr="popular">Popular</a></li>
+                <li style="padding-top: 25px; opacity: 1;"><a attr="topRated">Top Rated</a></li>
+                <li style="padding-top: 25px; opacity: 1;"><a attr="trending">Trending</a></li>
+                <li style="padding-top: 25px; opacity: 1;"><a attr="upcoming">Upcoming</a></li>
+                <li style="padding-top: 25px; opacity: 1;"><a section="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="copyrights">
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-solid fa-globe"></i></a>
+            </div>
+            <p class="pt-3">Copyright © 2022 All Rights Reserved. <br>Created by <a href="#" class="link-danger fw-bold" target="_blank">Housam Ramadan</a></p>
+        </div>
+    </div>
+
+
+    <section id="hero" class="container-fluid py-5">
+      <input type="search" id="search" placeholder="search" class="form-control mx-auto w-50 border-white px-3 rounded-pill bg-transparent text-white" >
+
+    </section>
+
+    <div class="row g-4 mt-3 text-white ms-4" id="movies">
+      <div class="col-lg-4 col-md-6 col-sm-12 ">
+       
+
+      </div>
+
+    </div>
+
+
+    <section id="Contact" class="container py-5 text-white">
+     <h2> Contect US</h2>
+     <form >
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <input oninput="validations(this , 'msgName' )" type="text" required id="name" class="form-control mt-3" maxlength="37" placeholder="Enter Your Name" >
+          <span id='msgName'> </span>
+        </div>
+        <div class="col-md-6">
+          <input oninput="validations(this , 'msgemail' )"  type="email" required id="email" class="form-control mt-3" maxlength="37" placeholder="Enter Your Email" >
+          <span id="msgemail" class="error"></span>
+        </div>
+        <div class="col-md-6">
+          <input oninput="validations(this , 'msgphone' )" type="number" required id="phone" class="form-control mt-3"  placeholder="Enter Your Phone" >
+          <span id="msgphone" ></span>
+        </div>
+        <div class="col-md-6">
+          <input  oninput="validations(this , 'msgage' )"  type="number" required id="age" class="form-control mt-3"  placeholder="Enter Your Age" >
+          <span id="msgage" class="error"></span>
+        </div>
+        <div class="col-md-6 position-relative">
+          <input  oninput="validations(this , 'msgpass' )"  type="password" required id="password" class="form-control mt-3"  placeholder="Enter Your Password" >
+          <span id="msgpass" class="error"></span>
+          <span class="showPass" >
+            <i data-show="show" class="fa-solid fa-eye-slash"></i>
+          </span>
+
+        </div>
+        <div class="col-md-6">
+          <input  oninput="validations(this , 'msgrepass' )"  type="password" required id="repassword" class="form-control mt-3"  placeholder="ReEnter Password" >
+          <span id="magrepass" class="error"></span>
+        
+        </div>
+          <div class="col-md-12 mt-4">
+            <button id="btnerror" type="submit" class="form-btn mb-3 rounded-2" > Submit</button>
+          </div>
+
+      </div>
+     </form>
+
+    </section>
+
+    <div id="back-to-top" >
+     <a href="#">
+      <i class="fa-solid fa-arrow-up-long"></i>
+     </a>
+    </div>
+
+    <div class="loading" >
+      <span class="loader"></span>
+
+    </div>
+
+  
+ 
+
+
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
